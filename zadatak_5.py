@@ -1,17 +1,17 @@
-a = int(input("Početna vrijednost: "))
-n = 0
+početna_vrijednost = int(input("Početna vrijednost: "))
+brojač = 0
 
-if a < 1:
+if početna_vrijednost < 1:
     print("Pogreška")
 else:
-    while a > 1:
-        if a % 2 == 0:
-            a = int(a/2)
-            n += 1
+    while početna_vrijednost > 1:
+        if početna_vrijednost % 2 == 0:
+            početna_vrijednost = int(početna_vrijednost / 2)
+            brojač += 1
         else:
-            a = a*3+1
-            n += 1
-        if a != 1:
-            print("Slijedeća vrijednost: {0}".format(a))
+            početna_vrijednost = početna_vrijednost * 3 + 1
+            brojač += 1
+        if početna_vrijednost != 1:
+            print(f"Slijedeća vrijednost: {početna_vrijednost}")
     else:
-        print("Krajnja vrijednost: {0}, broj koraka: {1}".format(a,n))
+        print(f"Krajnja vrijednost: {početna_vrijednost}, broj koraka: {brojač}")

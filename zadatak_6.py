@@ -1,8 +1,10 @@
-num = input("Unesi broj: ")
-lst = [int(i) for i in str(num)]
-n=0
+# Za znamenku u unesenom broju program ispisuje kvadrat svake znamenke (polazeći od posljednje) i ukupan broj znamenki..
 
-for i in reversed(lst):
-    n += 1
-    print(i**2)
-print("Broj znamenki: {0}".format(n))
+broj = input("Unesi broj: ")
+lista = [int(znamenka) for znamenka in str(broj)]
+brojač = 0
+
+for znamenka in reversed(lista):
+    brojač += 1
+    print(znamenka**2)
+print(f"Broj znamenki: {brojač}")
